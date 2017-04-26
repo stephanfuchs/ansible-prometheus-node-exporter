@@ -1,7 +1,8 @@
 ---
 
 prometheus_node_exporter_version: 0.12.0
-prometheus_node_exporter_release_name: "node_exporter-{{ prometheus_node_exporter_version }}.linux-amd64"
+prometheus_node_exporter_architecture: "amd64"
+prometheus_node_exporter_release_name: "node_exporter-{{ prometheus_node_exporter_version }}.linux-{{ prometheus_node_exporter_architecture }}"
 
 # https://github.com/prometheus/node_exporter#enabled-by-default
 prometheus_node_exporter_enabled_collectors:
